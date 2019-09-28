@@ -1,0 +1,11 @@
+.navbar {
+  background-color: black;
+  height: 77px;
+}
+.navbar-brand {
+  font-size: 28px;
+  padding: 10px;
+}
+.navbar-nav {
+  text-align: center;
+}

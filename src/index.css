@@ -1,0 +1,65 @@
+body {
+  /* background-image: url("../src/images/Socialimg.jpg"); */
+  width: 100%;
+}
+
+.animated {
+  text-align: center;
+  font-size: 170px;
+  color: rgb(200, 255, 0);
+  font-family: 'Bangers', cursive;
+  border-radius: 10px;
+}
+
+.description, .reg, .social {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+.login, .register {
+  text-align: center;
+  font-size: 38px;
+  color: black;
+  font-family: 'Bangers', cursive;
+}
+
+form {
+  font-family: 'Bangers', cursive;
+  color: black;
+  font-size: 24px;
+  float: right;
+  margin-right: 938px;
+
+}
+
+/* .password, .email {
+  width: 20%;
+  height: 25px;
+
+} */
+
+input {
+  text-align: center;
+  border-radius: 3px 2px 3px 2px;
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+button {
+  border-radius: 3px;
+  width: 38%;
+  display: flex;
+  justify-content: center;
+
+}
+.home {
+  color: black;
+  font-family: 'Bangers', cursive;
+}
+a {
+  color: black;
+  font-family: 'Bangers', cursive;
+}
