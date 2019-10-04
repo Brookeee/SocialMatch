@@ -1,28 +1,25 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-// const passport = require('passport');
+const express = require("express");
 
-const users = require('./models/user');
-const rate = require('./models/rating');
-
+const mongoose = require("mongoose");
+const routes = require("./routes");
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-const db = require("./src/config/keys").mongoURI;
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
-mongoose.connect(db, {useNewUrlParser: true}).then(() => console.log("MongDB connected")).catch(err => console.log(err));
+app.use(routes);
 
-// app.use(passport.initialize());
-// //Passport 
-// require("./config/passport")(passport);
-
-// Routes
-app.use('/api/user', users);
-app.use("/api/rate", rate);
-
-const PORT = process.env.PORT || 5000;
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://project3user:asdf1234@ds229078.mlab.com:29078/heroku_964h5x81",
+  {
+    useCreateIndex: true,
+    useNewUrlParser: true
+  }
+);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}!`));
