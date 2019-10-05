@@ -13,6 +13,7 @@ import {CssBaseline, CircularProgress} from '@material-ui/core';
 
 /*required components for routing*/
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import './styles.css';
 
 /*default material-ui theme generation*/
 const theme = createMuiTheme();
