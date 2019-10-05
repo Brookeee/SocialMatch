@@ -6,12 +6,12 @@ import 'firebase/firebase-firestore';
 
 //For firebase config setting, you should use your own application's information.
 const config = {
-  apiKey: "AIzaSyBKh85GN-tjMlW4Svu-qmr_9YGxd5fJKHU",
-  authDomain: "socialmatch1.firebaseapp.com",
-  databaseURL: "https://socialmatch1.firebaseio.com",
-  projectId: "socialmatch1",
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env_PROJECT_ID,
   storageBucket: "",
-  messagingSenderId: "79315477146"
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID
 };
 
 class Firebase {
