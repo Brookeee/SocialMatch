@@ -1,6 +1,7 @@
 # SocialMatch
 
-UPenn Project 3 WIP
+UPenn Project 3 WIP.
+--------------------
 This was a group project that wasn't completed to my satisfaction. Currently working on redoing the front end UI and adding components to application. 
 
 - Links that helped me: 
